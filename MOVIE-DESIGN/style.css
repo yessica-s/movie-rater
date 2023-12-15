@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans Bold', sans-serif;
 }
 
 .navbar{
@@ -20,12 +20,11 @@ body {
     background-color: black;
     padding: 0 50px; 
     height: 100%;
-    font-weight: bold;
 }
 
 .logo-container{
     flex: 1;
-    font-size: 15px;
+    font-size: 10px;
     color: rgb(229, 9, 20);
 }
 
@@ -49,18 +48,10 @@ body {
 
 .profile-container{
     flex: 2;
-    /*background-color: rgb(229, 9, 20);*/
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
-.profile-text-container{
-    margin: 0 20; 
-}
-
-.toggle{
-    width: 40px;
 .profile-text-container{
     margin: 0 20px;
 }
@@ -76,15 +67,6 @@ body {
     background-color: white;
     border-radius: 30px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-}
-
-.toggle-icon{
-    color: goldenrod;
-}
-
     align-items: center;
     justify-content: space-around;
     position: relative;
@@ -100,15 +82,6 @@ body {
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
-
-
-}
-
-.profile-pic{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 .sidebar{
     width: 50px;
@@ -117,4 +90,3 @@ body {
     position: fixed;
     top: 0;
 }
-
