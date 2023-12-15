@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'DM Sans Bold', sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .navbar{
@@ -20,11 +20,12 @@ body {
     background-color: black;
     padding: 0 50px; 
     height: 100%;
+    font-weight: bold;
 }
 
 .logo-container{
     flex: 1;
-    font-size: 10px;
+    font-size: 15px;
     color: rgb(229, 9, 20);
 }
 
@@ -49,6 +50,47 @@ body {
 .profile-container{
     flex: 2;
     /*background-color: rgb(229, 9, 20);*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20; 
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+
+.profile-pic{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .sidebar{
