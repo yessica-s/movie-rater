@@ -101,7 +101,7 @@ body {
 }
 .container{
     background-color: #151515;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     color: white;
 }
 .content-container{
@@ -127,4 +127,25 @@ body {
     border: none;
     outline: none;
     font-weight: bold;
+}
+.movie-list-container{
+    padding: 20px;
+}
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+.movie-list-item{
+    margin-right: 30px;
+}
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+}
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
 }
