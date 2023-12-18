@@ -100,8 +100,6 @@ body {
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
-
-
 }
 
 .profile-pic{
@@ -116,5 +114,9 @@ body {
     background-color: black;
     position: fixed;
     top: 0;
+}
+
+.left-menu-icon{
+    
 }
 
