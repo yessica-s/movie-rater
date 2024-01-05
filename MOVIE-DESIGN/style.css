@@ -133,11 +133,13 @@ body {
 }
 .movie-list-wrapper{
     position: relative;
+    overflow: hidden;
 }
 .movie-list{
     display: flex;
     align-items: center;
     height: 300px;
+    transform: translateX(0);
 }
 .movie-list-item{
     margin-right: 30px;
