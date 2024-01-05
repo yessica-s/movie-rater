@@ -213,3 +213,11 @@ body {
     opacity: .5;
     cursor: pointer;
 }
+
+.container{
+    background-color: white;
+}
+
+.movie-list-title{
+    color: blueviolet;
+}
