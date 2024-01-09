@@ -11,7 +11,6 @@ body {
     height: 50px;
     background-color: black;
     color: white;
-
 }
 
 .navbar-container{
@@ -82,6 +81,7 @@ body {
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 0.5s ease all;
 }
 .sidebar{
     width: 50px;
@@ -129,13 +129,12 @@ body {
     font-weight: bold;
 }
 .movie-list-container{
-    padding: 20px;
+    padding: 0 20px;
 }
 .movie-list-wrapper{
     position: relative;
     overflow: hidden;
 }
-
 .movie-list{
     display: flex;
     align-items: center;
@@ -145,7 +144,6 @@ body {
 }
 .movie-list-item{
     margin-right: 30px;
-    position: relative;
     position: relative;
 }
 .movie-list-item:hover .movie-list-item-img {
@@ -160,18 +158,93 @@ body {
     opacity: 1;
 }
 
-    opacity: 0.5;
-}
-
-.movie-list-item:hover .movie-list-item-title,
-.movie-list-item:hover .movie-list-item-desc,
-.movie-list-item:hover .movie-list-item-button{
-    opacity: 1;
-}
-
 .movie-list-item-img{
     transition: all 1s ease-in-out;
     width: 270px;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
+}
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: blueviolet;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: blueviolet;
+}
+
+.navbar.active{
+    background-color: white;
+    color: black; 
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;     
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black; 
+}
+
+.toggle.active{
+    background-color: black;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
 }
